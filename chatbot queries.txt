@@ -1,0 +1,63 @@
+Here are some types of questions users might ask your AI chatbot, categorized by topic for better organization:
+
+1. Personal & Background Questions
+"Tell me about yourself."
+"What's your educational background?"
+"Where are you based?"
+"How many years of experience do you have?"
+"What are your hobbies?"
+
+2. Skills & Expertise
+"What programming languages do you know?"
+"Are you familiar with machine learning?"
+"Do you have Android development experience?"
+"What frameworks/tools do you use?"
+"Can you work with databases?"
+
+3. Projects & Portfolio
+"What projects have you worked on?"
+"Show me your Python projects."
+"Do you have any open-source contributions?"
+"Where can I see your GitHub?"
+"What was your most challenging project?"
+
+4. Services & Pricing
+"What services do you offer?"
+"How much does an Android app cost?"
+"Do you provide AI solutions?"
+"What’s your pricing structure?"
+"Do you offer hourly consulting?"
+
+5. Availability & Hiring
+"Are you available for freelance work?"
+"How can I hire you?"
+"What’s your availability timeline?"
+"Do you work with international clients?"
+"Can you start immediately?"
+
+6. Technical & Career Advice
+"How do I start with Python?"
+"What’s the future of AI?"
+"Should I learn Kotlin or Java for Android?"
+"How do you stay updated with tech trends?"
+"Tips for building a strong portfolio?"
+
+7. Fun/Casual Questions
+"What’s your favorite programming joke?"
+"Coffee or tea while coding?"
+"Who’s your tech inspiration?"
+"What’s your favorite project you’ve built?"
+"What do you do when you’re not coding?"
+"I love you"
+
+8. Contact & Socials
+"What’s your email?"
+"Are you on LinkedIn?"
+"Can I call you?"
+"Where can I follow you?"
+"Do you have a resume I can download?"
+
+9. Testimonials & Reviews
+"Do you have client testimonials?"
+"What do past clients say about you?"
+"Can you share references?"

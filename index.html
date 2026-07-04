@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Add this near the top of your body -->
+<div class="floating-animation-ui">
+  <div class="floating-element fe1"></div>
+  <div class="floating-element fe2"></div>
+  <div class="floating-element fe3"></div>
+  <div class="floating-element fe4"></div>
+  <div class="floating-element fe5"></div>
+  <div class="floating-element fe6"></div>
+</div>
+
+<!-- Add this right after the floating-animation-ui div -->
+<div class="search-container">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton"><i class="fas fa-search"></i></button>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+  
+<div id="preloader">
+  <div class="loader-content">
+    <div class="loader-logo">
+      <div class="logo-circle"></div>
+      <img src="naruto.png" alt="Portfolio Logo" class="logo-image">
+    </div>
+    <h2 class="loader-title">Loading...</h2>
+    <div class="loader-bar">
+      <div class="bar-fill" id="bar-fill"></div>
+    </div>
+    <p id="load-percentage">0%</p>
+  </div>
+</div>
+
+<div class="home-bg-elements">
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+  <div class="circle c3"></div>
+  <div class="shape triangle"></div>
+  <div class="shape square"></div>
+</div>
+
+<div class="theme-toggle" id="themeToggle">
+  <span class="icon">🌙</span>
+  <div class="toggle-slider"></div>
+  <span class="icon">☀️</span>
+</div>
+
+<!-- Floating Navigation -->
+<div class="floating-nav">
+  <div class="bar-menu" id="barMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav-dots">
+    <a href="#home" class="dot active" data-tooltip="Home"></a>
+    <a href="#about" class="dot" data-tooltip="About"></a>
+    <a href="#skills" class="dot" data-tooltip="Skills"></a>
+    <a href="#portfolio" class="dot" data-tooltip="Projects"></a>
+    <a href="#services" class="dot" data-tooltip="Services"></a>
+    <a href="#testimonials" class="dot" data-tooltip="Testimonials"></a>
+    <a href="#blog" class="dot" data-tooltip="Blog"></a>
+    <a href="#faq" class="dot" data-tooltip="FAQ"></a>
+    <a href="#contact" class="dot" data-tooltip="Contact"></a>
+  </div>
+</div>
+
+<!-- Sidebar Navigation Panel -->
+<nav class="side-panel" id="sidePanel">
+  <div class="panel-header">
+    <div class="panel-logo">P</div>
+    <h3>Priyangshu</h3>
+  </div>
+  <ul class="side-nav-links">
+    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+    <li><a href="#portfolio"><i class="fas fa-project-diagram"></i> Projects</a></li>
+    <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+    <li><a href="#testimonials"><i class="fas fa-quote-left"></i> Testimonials</a></li>
+    <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+    <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="panel-footer">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <div class="profile-section">
+        <div class="profile-pic animated-border">
+          <img src="profile1.jpg" alt="Priyangshu" />
+        </div>
+      </div>
+      <div class="intro-section">
+        <h1 class="intro">Hi, I'm <span class="name">Priyangshu!</span></h1>
+        <h2 class="tagline"><span id="typing"></span></h2>
+        <div class="cta-buttons">
+          <a href="#portfolio" class="btn">View Portfolio</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#hire" class="btn">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-summary">
+          <p><strong>Hi, I'm Priyangshu</strong> — a passionate developer who thrives on building technology that solves real-world problems. My journey began with <span class="highlight">Python scripting</span>, evolved into <span class="highlight">Android development</span>, and now I'm exploring the frontiers of <span class="highlight">AI</span> while developing innovative <span class="highlight">sales monetization strategies</span>.</p>
+          <div class="personal-info">
+            <div class="info-item">
+              <span class="info-label">From:</span>
+              <span class="info-value">India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Experience:</span>
+              <span class="info-value">2+ Years</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value">itz_Anshu@gmail.com</span>
+            </div>
+          </div>
+        </div>
+  
+      <a href="resume.pdf" class="btn" download>Download My Resume</a>
+      <div class="learning-section">
+            <h3 class="learning-heading"><i class="fas fa-rocket"></i> Current Focus 🚀</h3>
+            <ul class="learning-list">
+                <li>
+                  <div class="learning-icon"><i class="fas fa-search"></i></div>
+                  <div class="learning-text">Machine Learning Algorithms with Python</div>
+                </li>
+                <li>
+                  <div class="learning-icon"><i class="fas fa-mobile-alt"></i></div>
+                  <div class="learning-text">Advanced Android UI/UX with Kotlin</div>
+                </li>
+                <li>
+                  <div class="learning-icon"><i class="fas fa-chart-line"></i></div>
+                  <div class="learning-text">Monetization Models for Digital Products</div>
+                </li>
+            </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-laptop"></i> My <span>Skills 💻</span></h2>
+      </div>
+      <div class="skills-section">
+        <div class="skill-row">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-code category-icon"></i>
+              <h3>Languages</h3>
+            </div>
+            <ul class="skill-badges">
+              <li>
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </li>
+              <li>
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+              </li>
+              <li>
+                <i class="fas fa-mobile-alt"></i>
+                <span>Kotlin</span>
+              </li>
+              <li>
+                <i class="fas fa-code"></i>
+                <span>Dart</span>
+              </li>
+              <li>
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <i class="fab fa-html5"></i>
+                <span>HTML & CSS</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-tools category-icon"></i>
+              <h3>Frameworks & Tools</h3>
+            </div>
+            <ul class="skill-badges">
+              <li>
+                <i class="fab fa-android"></i>
+                <span>Android Studio</span>
+              </li>
+              <li>
+                <i class="fas fa-brain"></i>
+                <span>TensorFlow</span>
+              </li>
+              <li>
+                <i class="fas fa-project-diagram"></i>
+                <span>PyTorch</span>
+              </li>
+              <li>
+                <i class="fab fa-git-alt"></i>
+                <span>Git & GitHub</span>
+              </li>
+              <li>
+                <i class="fas fa-code"></i>
+                <span>VS Code</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-database category-icon"></i>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-badges">
+              <li>
+                <i class="fas fa-fire"></i>
+
+                <span>Firebase</span>
+              </li>
+              <li>
+                <i class="fas fa-database"></i>
+                <span>SQLite</span>
+              </li>
+              <li>
+                <i class="fas fa-server"></i>
+                <span>MySQL</span>
+              </li>
+              <li>
+                <i class="fas fa-leaf"></i>
+                <span>MongoDB</span>
+              </li>
+              <li>
+                <i class="fas fa-project-diagram"></i>
+                <span>Neo4j</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-robot category-icon"></i>
+              <h3>AI & ML</h3>
+            </div>
+            <ul class="skill-badges">
+              <li>
+                <i class="fas fa-language"></i>
+                <span>NLP</span>
+              </li>
+              <li>
+                <i class="fas fa-chart-bar"></i>
+                <span>Data Modeling</span>
+              </li>
+              <li>
+                <i class="fas fa-magic"></i>
+                <span>Gen-AI</span>
+              </li>
+              <li>
+                <i class="fas fa-cogs"></i>
+                <span>Scikit-Learn</span>
+              </li>
+              <li>
+                <i class="fas fa-table"></i>
+                <span>Pandas & NumPy</span>
+              </li>
+              <li>
+                <i class="fas fa-anchor"></i>
+                <span>Anaconda</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills-bg-elements">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="shape hexagon"></div>
+    </div>
+  </section>
+
+  <section class="projects" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-folder"></i> My <span>Projects 📂</span></h2>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-category="all">All Projects</button>
+        <button class="filter-btn" data-category="python">Python</button>
+        <button class="filter-btn" data-category="android">Android</button>
+        <button class="filter-btn" data-category="ai-ml">AI/ML</button>
+        <button class="filter-btn" data-category="others">Others</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- Sample Project Card -->
+        <div class="project-card" data-category="python">
+          <div class="card-header">
+            <img src="project1.png" alt="Project Screenshot" class="project-img">
+            <div class="card-badge python">
+              <i class="fab fa-python"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Smart File Organizer</h3>
+            <p>Automatically organizes files based on type using Python (Pathlib) and OS libraries.</p>
+          </div>
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="https://demo-link.com" target="_blank" class="link-demo">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Demo</span>
+              </a>
+              <a href="https://github.com/priyangshu/organizer" target="_blank" class="link-github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="android">
+          <div class="card-header">
+            <img src="project2.png" alt="Project Screenshot" class="project-img">
+            <div class="card-badge android">
+              <i class="fab fa-android"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>ScheMate</h3>
+            <p>Android scheduling app with custom reminders, made using Kotlin & Firebase.</p>
+          </div>
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="https://playstore-link.com" target="_blank" class="link-demo">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Demo</span>
+              </a>
+              <a href="https://github.com/priyangshu/taskmate" target="_blank" class="link-github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="AI/ML">
+          <div class="card-header">
+            <img src="project3.png" alt="Project Screenshot" class="project-img">
+            <div class="card-badge AI/ML">
+              <i class="fas fa-robot"></i>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>WineQual</h3>
+            <p>The Wine Quality Predictor is an elegant, interactive web application.</p>
+          </div>
+          <div class="card-footer">
+            <div class="project-links">
+              <a href="https://playstore-link.com" target="_blank" class="link-demo">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Demo</span>
+              </a>
+              <a href="https://github.com/priyangshu/WineQual" target="_blank" class="link-github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more projects similarly -->
+      </div>
+    </div>
+  </section>
+
+    <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-bullseye"></i> My <span>Services 🎯</span></h2>
+      </div>
+      <div class="services-list">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Android App Development</h3>
+          <p>Designing and developing robust and visually appealing Android applications using Kotlin and Firebase.</p>
+          <div class="service-cta">
+            <span class="service-price">Starts at $500</span>
+            <a href="#contact" class="service-btn">Get Started</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>ML Research Assistance</h3>
+          <p>Support in exploring models, building ML workflows, and experimenting with real-world datasets and algorithms.</p>
+          <div class="service-cta">
+            <span class="service-price">Starts at $800</span>
+            <a href="#contact" class="service-btn">Get Started</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Marketing Funnel Automation</h3>
+          <p>Strategic automation of customer journeys, lead capture, and conversion tools to enhance digital product monetization.</p>
+          <div class="service-cta">
+            <span class="service-price">Starts at $600</span>
+            <a href="#contact" class="service-btn">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-comment"></i> Client <span>Testimonials 💬</span></h2>
+      </div>
+      <div class="testimonial-scroll">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="person1.jpg" alt="Client 1" class="client-img">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            <p>"Priyangshu delivered my project with clean Python code and thoughtful design. Highly recommended!"</p>
+          </div>
+          <div class="testimonial-footer">
+            <h4>Ravi Kumar</h4>
+            <span>Freelance Client</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="person2.jpg" alt="Client 2" class="client-img">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            <p>"His Android app exceeded our expectations — smooth UI, on-time delivery, and proactive communication."</p>
+          </div>
+          <div class="testimonial-footer">
+            <h4>Xīn yán</h4>
+            <span>Startup Founder</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="person3.jpg" alt="Client 3" class="client-img">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            <p>"His AI concepts were strong and he contributed valuable research to our model testing pipeline."</p>
+          </div>
+          <div class="testimonial-footer">
+            <h4>Dr. Michael Noah</h4>
+            <span>AI Lab Mentor</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="person4.jpg" alt="Client 4" class="client-img">
+            <div class="client-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            <p>"Great attitude and sharp problem-solving. Will collaborate again for Python automation tasks."</p>
+          </div>
+          <div class="testimonial-footer">
+            <h4>Meena Patel</h4>
+            <span>Project Lead</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-blog"></i> My <span>Blog ✍️</span></h2>
+      </div>
+      
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="blog1.jpg" alt="Android Development">
+            <div class="blog-badge">Development</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date"><i class="far fa-calendar"></i> June 15, 2025</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 5 min read</span>
+            </div>
+            <h3 class="blog-title">Advanced Kotlin Patterns for Clean Architecture</h3>
+            <p class="blog-excerpt">Exploring how to implement clean architecture in Android apps using Kotlin coroutines and dependency injection...</p>
+            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="blog2.jpg" alt="AI Concepts">
+            <div class="blog-badge">AI/ML</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date"><i class="far fa-calendar"></i> May 28, 2025</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 8 min read</span>
+            </div>
+            <h3 class="blog-title">Getting Started with Generative AI for Developers</h3>
+            <p class="blog-excerpt">A practical guide to implementing generative AI models in your projects using Python and TensorFlow...</p>
+            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="blog3.jpg" alt="Productivity">
+            <div class="blog-badge">Productivity</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date"><i class="far fa-calendar"></i> April 10, 2025</span>
+              <span class="blog-readtime"><i class="far fa-clock"></i> 6 min read</span>
+            </div>
+            <h3 class="blog-title">Building Effective Developer Workflows</h3>
+            <p class="blog-excerpt">How I optimized my development process with automation tools and time management techniques...</p>
+            <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#" class="btn view-all-btn">View All Posts</a>
+    </div>
+  </section>
+
+    <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-question-circle"></i> Frequently <span>Asked Questions(FAQs) ❓</span></h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What services do you offer exactly?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I specialize in three main areas: Android app development (using Kotlin), AI/ML solutions (with Python), and marketing funnel automation. This includes everything from building mobile apps from scratch, implementing machine learning models, to creating automated sales systems that convert leads into customers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you require finalized designs when reaching out?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Not necessarily! I can work with you at any stage of your project. If you have designs ready, I can implement them precisely. If you're starting from scratch, I can help with UX planning and prototyping before development begins.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which companies do you work with?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I've worked with startups, small businesses, and individual entrepreneurs across various industries including tech, e-commerce, education, and healthcare. I'm open to collaborating with any company that needs my expertise, regardless of size or industry.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much does a project cost?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Project costs vary based on scope and complexity. Android apps typically start at $500, AI solutions at $800, and funnel automation at $600. After discussing your specific needs, I'll provide a detailed quote with transparent pricing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you work internationally?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! I work with clients worldwide. My timezone is GMT+5:30 (India), but I'm flexible with communication times to accommodate clients from different regions. All work is conducted in English.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are the payment terms for a project?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>For most projects, I require a 30% deposit to begin work, with the balance due upon completion. For larger projects, we can arrange milestone payments. All payment methods (bank transfer, PayPal, etc.) are available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a project take?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Timelines vary by project complexity. A basic Android app might take 2-4 weeks, while AI solutions typically require 4-8 weeks. After reviewing your requirements, I'll provide an estimated timeline with key milestones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you take on small hourly work?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, I offer hourly consulting for smaller tasks like code reviews, debugging, or strategy sessions. My hourly rate is $50, with a minimum of 2 hours per engagement. For ongoing needs, we can discuss retainer arrangements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title underlined"><i class="fas fa-envelope"></i> Get In <span>Touch ✉️</span></h2>
+      </div>
+      <div class="footer-content">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>Email Me</h4>
+              <p>dear_love_@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Call Me</h4>
+              <p>+91 0000099999</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Location</h4>
+              <p>Kolkata | GMT+5:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/mdkdeozk" method="POST">
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" />
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+              <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn btn-submit">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-medium-m"></i></a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Priyangshu. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Assistant Chat Interface -->
+<div class="ai-assistant" id="aiAssistant">
+  <div class="assistant-header">
+    <div class="assistant-avatar">
+      <i class="fas fa-robot"></i>
+    </div>
+    <h3>Assistant</h3>
+    <button class="close-btn" id="closeAssistant">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="chat-container" id="chatContainer">
+    <div class="assistant-message">
+      <div class="message-avatar">
+        <i class="fas fa-robot"></i>
+      </div>
+      <div class="message-content">
+        <p>Hi there! I'm your AI assistant. How can I help you?</p>
+      </div>
+    </div>
+  </div>
+  <div class="input-container">
+    <input type="text" id="userInput" placeholder="Ask me anything..." />
+    <button id="sendMessage">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Floating Assistant Button -->
+<button class="assistant-btn" id="assistantBtn">
+  <i class="fas fa-robot"></i>
+</button>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" id="scrollToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Add this to your HTML file after the existing buttons -->
+<button class="camera-fun-btn" id="cameraFunBtn">
+  <i class="fas fa-camera"></i>
+</button>
+
+<div class="camera-modal" id="cameraModal">
+  <div class="camera-content">
+    <div class="camera-header">
+      <h3>Say Cheese!!</h3>
+      <button class="close-camera" id="closeCamera">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="camera-body">
+      <video id="cameraVideo" autoplay playsinline></video>
+      <canvas id="cameraCanvas" style="display: none;"></canvas>
+      <div class="camera-controls">
+        <button id="captureBtn" class="btn">
+          <i class="fas fa-camera"></i> Capture
+        </button>
+        <button id="retakeBtn" class="btn" style="display: none;">
+          <i class="fas fa-redo"></i> Retake
+        </button>
+        <button id="downloadBtn" class="btn" style="display: none;">
+          <i class="fas fa-download"></i> Download
+        </button>
+      </div>
+      <div class="photo-preview" id="photoPreview" style="display: none;">
+        <img id="previewImg" src="" alt="Your photo">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
